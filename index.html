@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kestrel Logistics – IT Operations &amp; Helpdesk Automation Portal</title>
+<link rel="stylesheet" href="style.css">
+<!-- SheetJS: reads/writes .xlsx and .csv in the browser (needs internet once to load from CDN) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+<aside id="sidebar">
+  <div class="brand"><span class="logo">K</span><div><b>Kestrel Logistics</b><small>IT Ops &amp; Helpdesk</small></div></div>
+  <nav id="nav" aria-label="Main navigation"></nav>
+  <div class="side-foot">Demo data is saved in this browser (localStorage).<button id="resetBtn" class="btn sm">Reset demo data</button></div>
+</aside>
+<div id="shell">
+  <header class="topbar">
+    <button id="menuBtn" class="btn" aria-label="Toggle menu">☰</button>
+    <h1 id="title">Dashboard</h1>
+    <span class="pill">IT Operations &amp; Helpdesk Automation Portal</span>
+  </header>
+  <main id="view"></main>
+</div>
+<dialog id="dlg"></dialog>
+<div id="toast" role="status"></div>
+<input type="file" id="fileIn" accept=".xlsx,.csv" hidden>
+<script src="script.js"></script>
+</body>
+</html>
